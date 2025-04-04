@@ -1,0 +1,73 @@
+/* 動畫 = @ */
+@keyframes chg_color{
+    0% {color: red;}
+    12.5% {color: orange;}
+    25% {color: yellow;}
+    37.5% {color: green;}
+    50% {color: blue;}
+    62.5% {color: indigo;}
+    75% {color: purple;}
+    87.5% {color: pink;}
+    100% {color: red;}
+}
+
+/* <p> = 無 */
+p{
+    color: red;
+}
+
+/* 屬性 = [] */
+[type]{
+    color:deepskyblue;
+}
+
+/* id = # */
+#background{
+    background-color: rgb(254, 216, 255);
+}
+
+/* class = . */
+.menu{
+    color: white;
+}
+.animation{
+    animation-name: chg_color;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+.key{
+    color:rgb(242, 117, 246);
+    background-color: rgb(216, 245, 255);
+    margin: 2px;
+    border: 3px solid rgb(255, 240, 105);
+    padding: 5px;
+}
+.galgame{
+    color: hotpink;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid hotpink;
+    justify-content:start;
+}
+.galgame_item{
+    position: relative;
+    flex: 1;
+}
+.fix_image{
+    float:right;
+    position: fixed;
+    opacity: 0.5;           /*透明度*/
+    border-radius: 500px;   /*邊框弧度*/
+    right: 5px;
+    bottom: 5px;
+}
+.image{
+    float: right;
+    /*position: absolute;*/
+    max-height: 100px;
+}
+.video{
+    height: 360px;
+    width: 640px;
+}
+
